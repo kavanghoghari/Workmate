@@ -1,0 +1,23 @@
+::root {
+    --bg-gradient: linear-gradient(to right, #222, #333, #444, #555, #666);
+    --animation-duration: 10s;
+    --animation-name: gradient;
+  }
+  
+  body {
+    background: var(--bg-gradient);
+    animation: var(--animation-name) var(--animation-duration) infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
